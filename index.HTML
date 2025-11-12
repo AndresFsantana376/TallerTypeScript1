@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Series de Televisión</title>
+    <title>Series de Televisión - Taller 1</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -11,29 +11,19 @@
   <body>
     <div class="container mt-4">
       <h1 class="text-center mb-4">Listado de Series</h1>
+      <table class="table table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Canal</th>
+            <th>Temporadas</th>
+          </tr>
+        </thead>
+        <tbody id="series"></tbody>
+      </table>
 
-      <div class="row">
-        <!-- Tabla -->
-        <div class="col-md-8">
-          <table class="table table-striped">
-            <thead class="thead-dark">
-              <tr>
-                <th>ID</th>
-                <th>Nombre</th>
-                <th>Canal</th>
-                <th>Temporadas</th>
-              </tr>
-            </thead>
-            <tbody id="series"></tbody>
-          </table>
-          <p id="average-seasons" class="font-weight-bold"></p>
-        </div>
-
-        <!-- Card de detalle -->
-        <div class="col-md-4">
-          <div id="series-detail"></div>
-        </div>
-      </div>
+      <p id="average-seasons" class="font-weight-bold"></p>
     </div>
 
     <script type="module" src="./dist/main.js"></script>
